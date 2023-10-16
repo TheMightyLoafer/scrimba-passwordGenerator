@@ -1,4 +1,39 @@
 body {
     margin: 0;
     background: #1F2937;
+    color: var(--white, #FFF);
+    font-family: Karla;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40px; /* 100% */
+    letter-spacing: -1px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    color: #D5D4D8;
+}
+
+h1 {
+    color: #FFF;
+}
+
+.green-txt {
+    color: #4ADF86;
+}
+
+.green-btn {
+    border: none;
+    background: #4ADF86;
+    color: #FFF;
+    border-radius: 5px;
+    padding: 10px 20px;
+    flex:content;
+    width: auto;
+    height: auto;
 }
