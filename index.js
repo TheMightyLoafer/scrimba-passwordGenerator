@@ -5,6 +5,12 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
  "}","]",",","|",":",";","<",">",".","?",
 "/"];
 
+let password1 = document.querySelector(".display-txt")
+let password2 = document.querySelector(".display-txt")
 
+function passwordGenerator() {
+    let randomChar = Math.floor(Math.random() * characters.length)
+    console.log(randomChar)
+}
 
-
+passwordGenerator()
