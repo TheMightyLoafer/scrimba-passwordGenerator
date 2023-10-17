@@ -5,12 +5,28 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
  "}","]",",","|",":",";","<",">",".","?",
 "/"];
 
-let password1 = document.querySelector(".display-txt")
-let password2 = document.querySelector(".display-txt")
+let password1 = document.getElementById("display-box1")
+let password2 = document.getElementById("display-box2")
 
+
+// main password generating function
 function passwordGenerator() {
-    let randomChar = Math.floor(Math.random() * characters.length)
-    console.log(randomChar)
+    //get a random number and store it in a variable for use later
+    let randomPass = ""
+    let randomPass2 = ""
+    //console.log(randomChar)
+    for(let i = 0; i <= 15; i++){
+        let randomChar = Math.floor(Math.random() * characters.length)
+        randomPass += characters[randomChar]
+        randomChar = Math.floor(Math.random() * characters.length)
+        randomPass2 += characters[randomChar]
+        
+    }
+    console.log(randomPass)
+    console.log(randomPass2)
+    password1.innerHTML = randomPass
+    password2.innerHTML = randomPass2
 }
 
-passwordGenerator()
+
+

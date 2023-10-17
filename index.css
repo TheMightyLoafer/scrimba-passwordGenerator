@@ -32,13 +32,16 @@ body {
     margin-top: 50px;
 }
 
-#display-box-container {
-    margin-top: 50px;
+#display-flexbox {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2vh;
 }
 
-.display-box {
+#display-box1, #display-box2 {
+    height: 110px;
+    width: 500px;
     background: #2F3E53;
-    border-radius: 6px;
 }
 
 h3 {
